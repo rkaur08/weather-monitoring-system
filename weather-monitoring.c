@@ -39,7 +39,6 @@ lcd.print("H:");
 lcd.print(humidity,1);
 lcd.print("% ");
 }
-63
 void read_direction()
 {
 int i;
@@ -83,7 +82,6 @@ lcd.print(" ");
 avg_val = 0;
 for(i=0;i<1000;i++)
 {
-64
 avg_val += analogRead(WEST);
 }
 avg_val/=1000;
@@ -127,7 +125,7 @@ digitalWrite(LED, HIGH);
 // Print a message to the LCD.
 lcd.print(" IoT Weather ");
 lcd.setCursor(0, 1);
-65
+
 lcd.print(" Monitor System");
 delay(1500); // waits for the servo to get there
 digitalWrite(LED, LOW);
